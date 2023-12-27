@@ -5,6 +5,7 @@ import Logo from "../public/Endless.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Bell, Search } from "lucide-react";
+import UserNav from "@/app/components/UserNav";
 
 interface linksProps {
   name: string;
@@ -38,9 +39,9 @@ export default function NavBar() {
   const pathName = usePathname();
 
   return (
-    <div className="w-full max-w-7xl mx-auto items-center justify-between px-5 sm:px-6 py-5 lg:px-8 flex">
+    <div className="w-full max-w-7xl mx-auto items-center py-2 justify-between px-5 sm:px-6 lg:px-8 flex">
       <div className="flex items-center">
-        <Link href="/home" className="w-32">
+        <Link href="/home" className="md:w-16 w-8">
           <Image src={Logo} alt="logo" priority />
         </Link>
         <ul className="lg:flex mb-16 gap-x-4 ml-14 hidden">
@@ -67,8 +68,9 @@ export default function NavBar() {
         </ul>
       </div>
       <div className="flex items-center gap-x-8 ">
-        <Search className="w-7 h-7 text-gray-300 mb-16 cursor-pointer" />
-        <Bell className="w-7 h-7 text-gray-300 mb-16 cursor-pointer" />
+        <Search className="w-7 h-7 text-gray-300 lg:mb-16 cursor-pointer" />
+        <Bell className="w-7 h-7 text-gray-300 lg:mb-16 cursor-pointer" />
+        <UserNav />
       </div>
     </div>
   );
