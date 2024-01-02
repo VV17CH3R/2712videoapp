@@ -14,7 +14,6 @@ interface VideoPlayerProps {
   year: number;
   age: number;
   time: number;
-  isMain: boolean;
 }
 
 export default function VideoPlayerModal({
