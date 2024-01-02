@@ -67,7 +67,7 @@ export function MovieCard({
                 </div>
                 <p className="line-clamp-2 text-sm text-gray-200 font-light" >{overview}</p>
         </div>
-        <VideoPlayerModal isMain={true} year={year} time={time} age={age} title={title} overview={overview} youtubeUrl={youtubeURL} key={movieId} state={playerState} changeState={setPlayerState} />
+        <VideoPlayerModal year={year} time={time} age={age} title={title} overview={overview} youtubeUrl={youtubeURL} key={movieId} state={playerState} changeState={setPlayerState} />
     </>
   )
 }
