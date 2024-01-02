@@ -31,7 +31,7 @@ const links: linksProps[] = [
   },
   {
     name: "Избранное",
-    href: "/home/fav",
+    href: "/home/user/list",
   },
 ];
 
